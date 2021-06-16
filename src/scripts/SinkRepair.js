@@ -1,6 +1,5 @@
 import { ServiceForm } from "./ServiceForm.js";
 import { Requests } from "./Requests.js";
-import { ServiceForm } from "./ServiceForm.js";
 
 document.addEventListener("click", (event) => {
   const clickedItem = event.target;
@@ -15,7 +14,6 @@ export const SinkRepair = () => {
     
     <article class="
     <section class="serviceForm">
-        <h2>Service Form</h2>
         ${ServiceForm()}
     </section>
 
