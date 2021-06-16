@@ -15,5 +15,5 @@ export const fetchRequests = () => {
 };
 
 export const getRequests = () => {
-  return dataAccess.requests.map((request) => ({ ...request }));
+  return applicationState.requests.map((request) => ({ ...request }));
 };
