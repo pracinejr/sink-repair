@@ -1,3 +1,4 @@
+import { ServiceForm } from "./ServiceForm.js";
 import { Requests } from "./Requests.js";
 
 document.addEventListener("click", (event) => {
