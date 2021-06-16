@@ -27,9 +27,12 @@ export const sendRequest = (userServiceRequest) => {
     body: JSON.stringify(userServiceRequest),
   };
 
+  const mainContainer = document.querySelector("#container");
+
   return fetch(`${API}/requests`, fetchOptions)
     .then((response) => response.json())
     .then(() => {
       // do something after the POST is finished. Stay tuned for what to put here!
+      mainContainer.dispatchEvent(new CustomEvent("stateChanged"));
     });
 };
