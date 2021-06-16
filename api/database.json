@@ -10,20 +10,6 @@
       "neededBy": "2021-08-27"
     },
     {
-      "description": "help",
-      "address": "100 blah ave",
-      "budget": "300.00",
-      "neededBy": "2021-07-08",
-      "id": 2
-    },
-    {
-      "description": "help",
-      "address": "100 blah ave",
-      "budget": "300.00",
-      "neededBy": "2021-07-08",
-      "id": 3
-    },
-    {
       "description": "leaky bathtub faucet",
       "address": "1000 infinity way",
       "budget": "900.00",
