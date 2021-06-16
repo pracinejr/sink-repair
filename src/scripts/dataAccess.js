@@ -18,6 +18,8 @@ export const getRequests = () => {
   return applicationState.requests.map((request) => ({ ...request }));
 };
 
+const mainContainer = document.querySelector("#container");
+
 export const sendRequest = (userServiceRequest) => {
   const fetchOptions = {
     method: "POST",
@@ -31,5 +33,6 @@ export const sendRequest = (userServiceRequest) => {
     .then((response) => response.json())
     .then(() => {
       // do something after the POST is finished. Stay tuned for what to put here!
+      mainContainer.dispatchEvent(new CustomEvent("stateChanged"));
     });
 };

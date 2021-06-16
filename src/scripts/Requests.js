@@ -7,7 +7,8 @@ export const Requests = () => {
         <ul>
             ${requests
               .map((requestToList) => {
-                return requestToList.description;
+                return `<li>${requestToList.description}</li>
+              `;
               })
               .join("")}
         </ul>
