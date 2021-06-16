@@ -18,6 +18,8 @@ export const getRequests = () => {
   return applicationState.requests.map((request) => ({ ...request }));
 };
 
+const mainContainer = document.querySelector("#container");
+
 export const sendRequest = (userServiceRequest) => {
   const fetchOptions = {
     method: "POST",
@@ -26,8 +28,6 @@ export const sendRequest = (userServiceRequest) => {
     },
     body: JSON.stringify(userServiceRequest),
   };
-
-  const mainContainer = document.querySelector("#container");
 
   return fetch(`${API}/requests`, fetchOptions)
     .then((response) => response.json())
